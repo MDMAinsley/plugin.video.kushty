@@ -154,16 +154,24 @@ def get_url(**kwargs):
 
 
 def get_genres():
-    """
-    Get the list of video genres
-
-    Here you can insert some code that retrieves
-    the list of video sections (in this case movie genres) from some site or API.
-
-    :return: The list of video genres
-    :rtype: list
-    """
-    return VIDEOS
+    GENRES = [
+    {
+        'genre': 'A',
+        'icon': os.path.join(ICONS_DIR, 'A.png'),
+        'fanart': os.path.join(FANART_DIR, 'A.png')
+    },
+    {
+        'genre': 'B',
+        'icon': os.path.join(ICONS_DIR, 'B.png'),
+        'fanart': os.path.join(FANART_DIR, 'B.png')
+    },
+    {
+        'genre': 'C',
+        'icon': os.path.join(ICONS_DIR, 'C.png'),
+        'fanart': os.path.join(FANART_DIR, 'C.png')
+    },
+]
+    return GENRES
 
 
 def get_videos(genre_index):
